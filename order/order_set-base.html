@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>set</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <style>
+      .img_set {
+        width: 150px;
+        height: 50px;
+        margin: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container mt-2">
+    <div class="row">
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success my-2 mr-2 my-sm-0" type="submit">
+                搜尋
+            </button>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                重設
+            </button>
+        </form>
+    </div>
+</div>
+<div class="container mt-2 ">
+    <div class="row">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">商品總覽</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">新品上架</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">欄位名稱</th>
+                    <th scope="col" colspan="2">輸入區域</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">商品圖片</th>
+                    <td>
+                        <img width="150" height="100" src="./img/platform/Upload.png" alt="show_img" class="rounded" />
+                        <button class="btn btn-outline-success my-2 my-sm-0 img_set" type="submit">
+                            上傳商品圖片
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">商品名稱</th>
+                    <td colspan="2">
+                        <div class="input-group">
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">基底選擇</th>
+                    <td colspan="2">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                請選擇商品基底
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">南瓜</a>
+                                <a class="dropdown-item" href="#">竹炭</a>
+                                <a class="dropdown-item" href="#">抹茶</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">配料選擇</th>
+                    <td colspan="2">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                請選擇配料1
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">南瓜</a>
+                                <a class="dropdown-item" href="#">竹炭</a>
+                                <a class="dropdown-item" href="#">抹茶</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td colspan="2">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                請選擇配料2
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">南瓜</a>
+                                <a class="dropdown-item" href="#">竹炭</a>
+                                <a class="dropdown-item" href="#">抹茶</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">價格</th>
+                    <td colspan="2">
+                        <div class="input-group">
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">說明</th>
+                    <td colspan="2">
+                        <div class="input-group">
+                            <input type="text" class="form-control" aria-label="Sizing example input"
+                                aria-describedby="inputGroup-sizing-default" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td colspan="2">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                            確認新增
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
